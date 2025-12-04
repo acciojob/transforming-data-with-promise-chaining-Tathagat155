@@ -9,25 +9,25 @@ const div=document.getElementById("output");
 	 }).then((inputValue)=>{
 		 div.textContent=`Result: ${inputValue}`;
 		 return new Promise((resolve)=>{
-			 setTimeout(()=>resolve(inputValue),3000);
+			 setTimeout(()=>resolve(inputValue),2000);
 		 })
 	 }).then((inputValue)=>{
 		  inputValue=inputValue*2;
 		 div.textContent=`Result: ${inputValue}`;
 		 return new Promise((resolve)=>{
-			 setTimeout(()=>resolve(inputValue),4000);
+			 setTimeout(()=>resolve(inputValue),1000);
 		 })
 	 }).then((inputValue)=>{
 		 inputValue=inputValue-3;
 		 div.textContent=`Result: ${inputValue}`;
 		 return new Promise((resolve)=>{
-			setTimeout(()=>resolve(inputValue),5000); 
+			setTimeout(()=>resolve(inputValue),1000); 
 		 })
 	 }).then((inputValue)=>{
 		  inputValue=inputValue/2;
 		  div.textContent=`Result: ${inputValue}`;
 		 return new Promise((resolve)=>{
-			setTimeout(()=>resolve(inputValue),6000); 
+			setTimeout(()=>resolve(inputValue),1000); 
 		 })
 	 }).then((inputValue)=>{
 		  inputValue=inputValue+10;
