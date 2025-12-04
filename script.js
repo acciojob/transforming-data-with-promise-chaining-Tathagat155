@@ -8,29 +8,29 @@ const div=document.getElementById("output");
 		 setTimeout(()=>resolve(inputValue),2000);
 	 }).then((inputValue)=>{
 		 div.textContent=`Result: ${inputValue}`;
-		 inputValue=inputValue*2;
 		 return new Promise((resolve)=>{
 			 setTimeout(()=>resolve(inputValue),3000);
 		 })
 	 }).then((inputValue)=>{
+		  inputValue=inputValue*2;
 		 div.textContent=`Result: ${inputValue}`;
-		 inputValue=inputValue-3;
 		 return new Promise((resolve)=>{
 			 setTimeout(()=>resolve(inputValue),4000);
 		 })
 	 }).then((inputValue)=>{
+		 inputValue=inputValue-3;
 		 div.textContent=`Result: ${inputValue}`;
-		 inputValue=inputValue/2;
 		 return new Promise((resolve)=>{
 			setTimeout(()=>resolve(inputValue),5000); 
 		 })
 	 }).then((inputValue)=>{
+		  inputValue=inputValue/2;
 		  div.textContent=`Result: ${inputValue}`;
-		 inputValue=inputValue+10;
 		 return new Promise((resolve)=>{
 			setTimeout(()=>resolve(inputValue),6000); 
 		 })
 	 }).then((inputValue)=>{
+		  inputValue=inputValue+10;
 		 div.textContent=`Final Result: ${inputValue}`;
 	 })
  });
